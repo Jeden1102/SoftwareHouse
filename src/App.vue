@@ -1,10 +1,13 @@
 <template>
   <div id="app">
+
     <div class="container">
     <header>
       <BaseHeader/>
     </header>
     <main>
+      <Map/>
+
       <router-view />
     </main>
 
@@ -19,10 +22,12 @@
 <script>
 import BaseHeader from '@/components/base/BaseHeader.vue';
 import BaseFooter from '@/components/base/BaseFooter.vue';
+import Map from '@/components/Map.vue';
 export default {
   components: {
     BaseHeader,
-    BaseFooter
+    BaseFooter,
+    Map
   }
 }
 </script>

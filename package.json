@@ -12,6 +12,7 @@
     "@splidejs/vue-splide": "^0.6.10",
     "axios": "^0.27.2",
     "core-js": "^3.6.5",
+    "directus-extension-svgmap-picker-interface": "^0.1.0",
     "vue": "^2.6.11",
     "vue-multiselect": "^2.1.6",
     "vue-router": "^3.2.0",
