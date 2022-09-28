@@ -67,9 +67,9 @@ export default {
     methods: {
         getJobData() {
             const config = {
-                headers: { Authorization: `Bearer b42def251b57c58af2d02f1f5fda40be09fcbc5b6bdeafa958bf598e80113b23d4576d741e763f3ef3f57943c29f09f125c99911d8a9f536d4ba0e5624857e46a8c8e4c384e29cd2c7e6ae80ac8a13bbd13ca151de73ebf1e8ca7f2dbb0a1eeb6fc0191a4fc4199ad94953a8c833e2377ece0d0bb56bccdd660973eed3588d26` }
+                headers: { Authorization: `Bearer 4cdbd9f1b16cfe4f31bd0f504d4266d6b73cca1ffc3acf447fbfd01cab1aa4e0045a3444a9fdcb3da0c3b5850e4e174ba2143a4f57a37bf55f4b325539883bb26d61de85d9908e38ae813e1d063139c11900f1058977458413a5289f00fb4494c831774bec996c2e54d5d2194edcc49c44c26e3fdf2b43cf19965770d5fe8463` }
             };
-            axios.get(`http://localhost:1337/api/job-offers/${this.id}`, config).then(data => {
+            axios.get(`https://evening-cliffs-27692.herokuapp.com/api/job-offers/${this.id}`, config).then(data => {
                 this.jobData = data.data.data
             }).catch(err => {
                 console.log(err)
